@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Are you bored? Don't panic, come and play our dice game with a friend! The first to reach 100 wins!"
+    />
+    <meta
+      name="keywords"
+      content="play, dice, 1vs1, multiplayer, game, roll"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>DICE GAME</title>
+  </head>
+  <body>
+    <div class="board ion-text-center ion-text-uppercase">
+      <!--Player1-->
+
+      <div
+        id="name-0"
+        class="player1 name ion-text-center ion-align-self-center"
+      >
+        <p>Player 1</p>
+      </div>
+      <div id="score-0" class="player-score one">0</div>
+      <div class="player1-current">
+        <div class="current"><p>Current</p></div>
+        <div id="current-0" class="current-score">0</div>
+      </div>
+
+      <!--Player2-->
+
+      <div
+        id="name-1"
+        class="player2 name ion-text-center ion-align-self-center"
+      >
+        <p>Player 2</p>
+      </div>
+
+      <div id="score-1" class="player-score two">0</div>
+
+      <div class="player2-current">
+        <div class="current"><p>Current</p></div>
+        <div id="current-1" class="current-score">0</div>
+      </div>
+
+      <!--Menu-->
+
+      <div class="new-game ion-text-center ion-align-self-center">
+        <ion-button id="new-game" color="medium" fill="clear">
+          <ion-icon
+            class="icon"
+            name="add-circle-outline"
+            size="large"
+          ></ion-icon>
+          New Game
+        </ion-button>
+        <ion-button id="rules" color="medium" fill="clear">
+          <ion-icon class="icon" name="book-outline" size="large"></ion-icon>
+          Rules
+        </ion-button>
+      </div>
+      <div class="dice">
+        <img src="img/dice-4.png" alt="dice" class="dice-img" />
+      </div>
+      <div class="game-options ion-text-center ion-align-self-center">
+        <div class="roll-dice">
+          <ion-button id="roll" color="medium" fill="clear">
+            <ion-icon class="icon" name="sync-outline" size="large"></ion-icon
+            >Roll Dice
+          </ion-button>
+        </div>
+        <div class="hold">
+          <ion-button id="hold" color="medium" fill="clear">
+            <ion-icon
+              class="icon"
+              name="download-outline"
+              size="large"
+            ></ion-icon>
+            Hold
+          </ion-button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
